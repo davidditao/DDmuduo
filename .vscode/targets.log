@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 17 19:59:16 2022
+# Make data base, printed on Thu May 19 20:09:45 2022
 
 # Variables
 
@@ -36,10 +38,8 @@ GDMSESSION = ubuntu
 XMODIFIERS = @im=ibus
 # makefile
 CURDIR := /home/zhuyukuan/my_code/mymuduo
-# makefile (from 'Makefile', line 39)
+# makefile
 SHELL = /bin/sh
-# makefile (from 'Makefile', line 45)
-RM = /usr/bin/cmake -E remove -f
 # environment
 VTE_VERSION = 5202
 # environment
@@ -48,10 +48,8 @@ VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_langu
 _ = /usr/bin/code
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile (from 'Makefile', line 54)
-CMAKE_BINARY_DIR = /home/zhuyukuan/my_code/mymuduo
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
@@ -77,7 +75,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1472,unix/zUbuntu:/tmp/.ICE-unix/1472
+SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1441,unix/zUbuntu:/tmp/.ICE-unix/1441
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -109,7 +107,7 @@ PWD = /home/zhuyukuan/my_code/mymuduo
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1549
+SSH_AGENT_PID = 1518
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -128,8 +126,6 @@ VSCODE_CODE_CACHE_PATH = /home/zhuyukuan/.config/Code/CachedData/da15b6fd3ef8564
 LOGNAME = zhuyukuan
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 48)
-EQUALS = =
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -157,17 +153,15 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e58bdb13-54f2-4305-92cb-31cab2267b2a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-306b68f4-cf1d-41f4-a627-4f64810efea3.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
 USER = zhuyukuan
 # makefile
-.DEFAULT_GOAL := default_target
+.DEFAULT_GOAL := 
 # environment
 XDG_CURRENT_DESKTOP = Unity
-# makefile (from 'Makefile', line 51)
-CMAKE_SOURCE_DIR = /home/zhuyukuan/my_code/mymuduo
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -181,9 +175,9 @@ LANGUAGE = zh_CN:zh
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-02659215-1.67.1-main.sock
 # makefile
-MAKEFLAGS = pqrRs
+MAKEFLAGS = pqrR
 # environment
-MFLAGS = -pqrRs
+MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # automatic
@@ -195,7 +189,7 @@ GDK_BACKEND = x11
 # environment
 QT_ACCESSIBILITY = 1
 # environment
-DESKTOP_AUTOSTART_ID = 10666ff870f5913e29165278871697516300000014720007
+DESKTOP_AUTOSTART_ID = 10880306c3504699c6165285702280216500000014410007
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
 # default
@@ -206,16 +200,14 @@ MAKEFILES :=
 LC_ALL = C
 # environment
 QT4_IM_MODULE = xim
-# makefile (from 'Makefile', line 42)
-CMAKE_COMMAND = /usr/bin/cmake
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e71bef6b_58d6_4200_a06b_9c0a0b453a07
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3788f7f0_dad0_4b98_bbb8_ba3ac0275955
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.74
-# makefile (from 'Makefile', line 21)
-SUFFIXES = 
+GNOME_TERMINAL_SERVICE = :1.73
+# default
+SUFFIXES := 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
@@ -229,9 +221,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 2085
+VSCODE_PID = 21662
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=17/144=12%
+# Load=105/1024=10%, Rehash=0, Collisions=15/127=12%
 
 # Pattern-specific Variable Values
 
@@ -239,184 +231,36 @@ VSCODE_PID = 2085
 
 # Directories
 
-# . (device 2066, inode 5375642): 26 files, no impossibilities.
+# . (device 2066, inode 5375642): 10 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%.hpux_make_needs_suffix_list:
-
-# 1 implicit rules, 0 (0.0%) terminal.
+# No implicit rules.
 
 # Files
 
-cmake_force:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-edit_cache:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 72):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-
-all: cmake_check_build_system
-#  Phony target (prerequisite of .PHONY).
+# Not a target:
+all:
 #  Command line target.
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
-#  recipe to execute (from 'Makefile', line 83):
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles /home/zhuyukuan/my_code/mymuduo/CMakeFiles/progress.marks
- 
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles 0
-
-.PHONY: default_target cmake_force rebuild_cache rebuild_cache/fast edit_cache edit_cache/fast all clean clean/fast preinstall preinstall/fast depend mymuduo mymuduo/fast Logger.o Logger.i Logger.s Timestamp.o Timestamp.i Timestamp.s help cmake_check_build_system
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-preinstall/fast:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 105):
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
-
-.SUFFIXES: .hpux_make_needs_suffix_list
-#  Implicit rule search has not been done.
-#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-12 16:48:54.77852435
-#  File has been updated.
-#  Successfully updated.
-
-.NOTPARALLEL:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clean/fast: clean
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-cmake_check_build_system:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := cmake_check_build_system
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
-#  recipe to execute (from 'Makefile', line 182):
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+#  Failed to be updated.
 
-Timestamp.i:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 148):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Timestamp.i
-
-Timestamp.o:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 143):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Timestamp.o
-
-help:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 158):
-	@echo "The following are some of the valid targets for this Makefile:"
-	@echo "... all (the default if no target is provided)"
-	@echo "... clean"
-	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... mymuduo"
-	@echo "... edit_cache"
-	@echo "... Logger.o"
-	@echo "... Logger.i"
-	@echo "... Logger.s"
-	@echo "... Timestamp.o"
-	@echo "... Timestamp.i"
-	@echo "... Timestamp.s"
-
-Logger.i:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 133):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Logger.i
-
-Logger.o:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 128):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Logger.o
-
-preinstall: all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 100):
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
-
-.SILENT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-depend:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 110):
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -424,93 +268,28 @@ depend:
 #  Modification time never checked.
 #  File has not been updated.
 
-default_target: all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-mymuduo/fast:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 123):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/build
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 90):
-	$(MAKE) -f CMakeFiles/Makefile2 clean
-
-rebuild_cache/fast: rebuild_cache
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-edit_cache/fast: edit_cache
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-Timestamp.s:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 153):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Timestamp.s
-
-Logger.s:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 138):
-	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Logger.s
-
 # Not a target:
-.hpux_make_needs_suffix_list:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-mymuduo: cmake_check_build_system
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+GNUmakefile:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 118):
-	$(MAKE) -f CMakeFiles/Makefile2 mymuduo
-
-rebuild_cache:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 61):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=29/1024=3%, Rehash=0, Collisions=3/95=3%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 57 / storage = 673 B / avg = 11 B
-# current buf: size = 8162 B / used = 673 B / count = 57 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 146 B / avg = 8 B
+# current buf: size = 8162 B / used = 146 B / count = 18 / avg = 8 B
 
-# strcache performance: lookups = 163 / hit rate = 65%
+ 
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=57/8192=1%, Rehash=0, Collisions=2/163=1%
-# Finished Make data base on Tue May 17 19:59:16 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Thu May 19 20:09:45 2022
 
  

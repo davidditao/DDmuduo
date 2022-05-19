@@ -1,25 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/zhuyukuan/my_code/mymuduo'
-/usr/bin/cmake -H/home/zhuyukuan/my_code/mymuduo -B/home/zhuyukuan/my_code/mymuduo --check-build-system CMakeFiles/Makefile.cmake 0
-/usr/bin/cmake -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles /home/zhuyukuan/my_code/mymuduo/CMakeFiles/progress.marks
-make -f CMakeFiles/Makefile2 all
-make[1]: Entering directory '/home/zhuyukuan/my_code/mymuduo'
-make -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/depend
- 
-make[2]: Entering directory '/home/zhuyukuan/my_code/mymuduo'
-cd /home/zhuyukuan/my_code/mymuduo && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zhuyukuan/my_code/mymuduo /home/zhuyukuan/my_code/mymuduo /home/zhuyukuan/my_code/mymuduo /home/zhuyukuan/my_code/mymuduo /home/zhuyukuan/my_code/mymuduo/CMakeFiles/mymuduo.dir/DependInfo.cmake --color=
-make[2]: Leaving directory '/home/zhuyukuan/my_code/mymuduo'
-make -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/build
-make[2]: Entering directory '/home/zhuyukuan/my_code/mymuduo'
-/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/zhuyukuan/my_code/mymuduo/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/mymuduo.dir/Logger.o"
-/usr/bin/c++  -Dmymuduo_EXPORTS  -g -fPIC   -o CMakeFiles/mymuduo.dir/Logger.o -c /home/zhuyukuan/my_code/mymuduo/Logger.cc
-/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/zhuyukuan/my_code/mymuduo/CMakeFiles --progress-num=2 "Building CXX object CMakeFiles/mymuduo.dir/Timestamp.o"
-/usr/bin/c++  -Dmymuduo_EXPORTS  -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/zhuyukuan/my_code/mymuduo/Timestamp.cc
-/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/zhuyukuan/my_code/mymuduo/CMakeFiles --progress-num=3 "Linking CXX shared library lib/libmymuduo.so"
-/usr/bin/cmake -E cmake_link_script CMakeFiles/mymuduo.dir/link.txt --verbose=
-make[2]: Leaving directory '/home/zhuyukuan/my_code/mymuduo'
-/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/zhuyukuan/my_code/mymuduo/CMakeFiles --progress-num=1,2,3 "Built target mymuduo"
-make[1]: Leaving directory '/home/zhuyukuan/my_code/mymuduo'
-/usr/bin/cmake -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles 0
 make: Leaving directory '/home/zhuyukuan/my_code/mymuduo'
  
+make: *** No targets specified and no makefile found.  Stop.
+

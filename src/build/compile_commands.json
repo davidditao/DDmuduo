@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/zhuyukuan/my_code/mymuduo/src/Channel.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Channel.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/DefaultPoller.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/DefaultPoller.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EPollPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/EPollPoller.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/EPollPoller.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoop.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/EventLoop.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/InetAddress.o -c /home/zhuyukuan/my_code/mymuduo/src/InetAddress.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/InetAddress.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Logger.o -c /home/zhuyukuan/my_code/mymuduo/src/Logger.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Logger.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/zhuyukuan/my_code/mymuduo/src/Poller.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Poller.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc"
+}
+]

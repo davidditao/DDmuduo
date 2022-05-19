@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -g  -shared -Wl,-soname,libmymuduo.so -o lib/libmymuduo.so CMakeFiles/mymuduo.dir/Logger.o CMakeFiles/mymuduo.dir/Timestamp.o 
