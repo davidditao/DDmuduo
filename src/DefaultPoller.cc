@@ -1,4 +1,5 @@
 #include "Poller.h"
+#include "EPollPoller.h"
 
 // 注意:在Poller.cc中不实现 newDefaultPoller() 方法
 // 原因是 newDefaultPoller()方法需要返回一个 Poller类的派生类: PollPoller 或 EPollPoller
@@ -14,6 +15,6 @@ Poller *Poller::newDefaultPoller(EventLoop *loop)
     }
     else
     {
-        return nullptr; // 生成epoll实例
+        return new EPollPoller(loop); // 生成epoll实例
     }
 }

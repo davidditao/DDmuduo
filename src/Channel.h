@@ -44,7 +44,7 @@ public:
 
     // 设置fd相应的事件状态
     // 让fd对读事件感兴趣
-    void enaleReading()
+    void enableReading()
     {   
         // 让 events_ 相应的位置上 kREadEvent
         events_ |= kReadEvent;

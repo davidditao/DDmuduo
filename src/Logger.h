@@ -45,7 +45,8 @@
 		char buf[1024] = {0};                \
 		snprintf(buf, 1024, LogmsgFormat, ##__VA_ARGS__);  \
 		logger.log(buf);                     \
-	} while (0) #else
+	} while (0) 
+#else
 #define LOG_DEBUG(LogmsgFormat, ...) ;
 #endif
 
