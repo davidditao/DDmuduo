@@ -57,6 +57,8 @@ void Thread::start()
     sem_wait(&sem);
 
 }
+
+// 等待子线程退出
 int Thread::join()
 {
     joined_ = true;
