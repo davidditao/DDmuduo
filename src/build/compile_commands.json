@@ -46,6 +46,11 @@
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Thread.o -c /home/zhuyukuan/my_code/mymuduo/src/Thread.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Thread.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc"
 }

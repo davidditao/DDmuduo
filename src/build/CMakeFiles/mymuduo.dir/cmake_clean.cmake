@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/Logger.o"
   "CMakeFiles/mymuduo.dir/Poller.o"
   "CMakeFiles/mymuduo.dir/TcpServer.o"
+  "CMakeFiles/mymuduo.dir/Thread.o"
   "CMakeFiles/mymuduo.dir/Timestamp.o"
   "../lib/libmymuduo.pdb"
   "../lib/libmymuduo.so"

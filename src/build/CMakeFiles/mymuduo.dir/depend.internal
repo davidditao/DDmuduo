@@ -52,6 +52,11 @@ CMakeFiles/mymuduo.dir/Poller.o
 CMakeFiles/mymuduo.dir/TcpServer.o
  /home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc
  /home/zhuyukuan/my_code/mymuduo/src/TcpServer.h
+CMakeFiles/mymuduo.dir/Thread.o
+ /home/zhuyukuan/my_code/mymuduo/src/CurrentThread.h
+ /home/zhuyukuan/my_code/mymuduo/src/Thread.cc
+ /home/zhuyukuan/my_code/mymuduo/src/Thread.h
+ /home/zhuyukuan/my_code/mymuduo/src/noncopyable.h
 CMakeFiles/mymuduo.dir/Timestamp.o
  /home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc
  /home/zhuyukuan/my_code/mymuduo/src/Timestamp.h
