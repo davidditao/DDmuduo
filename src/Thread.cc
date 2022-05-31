@@ -4,7 +4,7 @@
 #include <semaphore.h>
 
 // 静态的成员变量要在类外单独初始化
-std::atomic_int32_t numCreated_;
+std::atomic_int32_t Thread::numCreated_(0);
 
 Thread::Thread(ThreadFunc func, const std::string &name)
     : started_(false),

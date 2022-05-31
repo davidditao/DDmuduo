@@ -1,67 +1,72 @@
 [
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/zhuyukuan/my_code/mymuduo/src/Channel.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/zhuyukuan/my_code/mymuduo/src/Channel.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Channel.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/CurrentThread.o -c /home/zhuyukuan/my_code/mymuduo/src/CurrentThread.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/CurrentThread.o -c /home/zhuyukuan/my_code/mymuduo/src/CurrentThread.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/CurrentThread.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/DefaultPoller.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/DefaultPoller.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/DefaultPoller.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EPollPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/EPollPoller.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EPollPoller.o -c /home/zhuyukuan/my_code/mymuduo/src/EPollPoller.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/EPollPoller.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoop.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoop.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/EventLoop.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThread.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoopThread.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThread.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoopThread.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/EventLoopThread.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoopThreadPool.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.o -c /home/zhuyukuan/my_code/mymuduo/src/EventLoopThreadPool.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/EventLoopThreadPool.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/InetAddress.o -c /home/zhuyukuan/my_code/mymuduo/src/InetAddress.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/InetAddress.o -c /home/zhuyukuan/my_code/mymuduo/src/InetAddress.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/InetAddress.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Logger.o -c /home/zhuyukuan/my_code/mymuduo/src/Logger.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Logger.o -c /home/zhuyukuan/my_code/mymuduo/src/Logger.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Logger.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/zhuyukuan/my_code/mymuduo/src/Poller.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/zhuyukuan/my_code/mymuduo/src/Poller.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Poller.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Socket.o -c /home/zhuyukuan/my_code/mymuduo/src/Socket.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Socket.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Thread.o -c /home/zhuyukuan/my_code/mymuduo/src/Thread.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Thread.o -c /home/zhuyukuan/my_code/mymuduo/src/Thread.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Thread.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
-  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Timestamp.cc"
 }
 ]

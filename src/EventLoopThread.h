@@ -2,6 +2,7 @@
 #pragma once
 
 #include "noncopyable.h"
+#include "Thread.h"
 
 #include <functional>
 #include <mutex>
@@ -9,7 +10,6 @@
 #include <string>
 
 class EventLoop;
-class Thread;
 
 class EventLoopThread : noncopyable
 {
