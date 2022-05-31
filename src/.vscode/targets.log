@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 02:13:18 2022
+# Make data base, printed on Tue May 31 14:14:45 2022
 
 # Variables
 
@@ -77,7 +77,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1471,unix/zUbuntu:/tmp/.ICE-unix/1471
+SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1510,unix/zUbuntu:/tmp/.ICE-unix/1510
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -109,7 +109,7 @@ PWD = /home/zhuyukuan/my_code/mymuduo/src
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1548
+SSH_AGENT_PID = 1587
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -157,7 +157,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e1c016dd-6d3e-483c-afb0-3ea853abfb1d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-fa0f1c68-7df3-4935-985a-4ec993aac0a3.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -195,7 +195,7 @@ GDK_BACKEND = x11
 # environment
 QT_ACCESSIBILITY = 1
 # environment
-DESKTOP_AUTOSTART_ID = 105b18f2305fff9c1d165393437160482600000014710007
+DESKTOP_AUTOSTART_ID = 1041118d0e699fce3e165400642790986000000015100007
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
 # default
@@ -209,7 +209,7 @@ QT4_IM_MODULE = xim
 # makefile (from 'Makefile', line 42)
 CMAKE_COMMAND = /usr/bin/cmake
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/fb7d3cf4_8eba_4e47_a70b_4519e5356b12
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/30f90e4d_e0b4_42a0_adca_7e5faf945c86
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -229,7 +229,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 2073
+VSCODE_PID = 2847
 # variable set hash-table stats:
 # Load=110/1024=11%, Rehash=0, Collisions=17/144=12%
 
@@ -239,9 +239,9 @@ VSCODE_PID = 2073
 
 # Directories
 
-# . (device 2066, inode 5506964): 27 files, no impossibilities.
+# . (device 2066, inode 5506964): 33 files, no impossibilities.
 
-# 27 files, no impossibilities in 1 directories.
+# 33 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,6 +277,7 @@ all: cmake_check_build_system
 # Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'Makefile', line 83):
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles /home/zhuyukuan/my_code/mymuduo/CMakeFiles/progress.marks
+ 
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles 0
 
@@ -286,7 +287,6 @@ all: cmake_check_build_system
 #  File has not been updated.
 
 preinstall/fast:
- 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -302,7 +302,7 @@ preinstall/fast:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-12 16:48:54.77852435
+#  Last modified 2022-05-30 19:07:15.03942748
 #  File has been updated.
 #  Successfully updated.
 
@@ -505,12 +505,12 @@ rebuild_cache:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 58 / storage = 697 B / avg = 12 B
-# current buf: size = 8162 B / used = 697 B / count = 58 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 64 / storage = 798 B / avg = 12 B
+# current buf: size = 8162 B / used = 798 B / count = 64 / avg = 12 B
 
-# strcache performance: lookups = 164 / hit rate = 64%
+# strcache performance: lookups = 170 / hit rate = 62%
 # hash-table stats:
-# Load=58/8192=1%, Rehash=0, Collisions=2/164=1%
-# Finished Make data base on Tue May 31 02:13:18 2022
+# Load=64/8192=1%, Rehash=0, Collisions=2/170=1%
+# Finished Make data base on Tue May 31 14:14:45 2022
 
  
