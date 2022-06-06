@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 20:56:30 2022
+# Make data base, printed on Mon Jun  6 19:53:41 2022
 
 # Variables
 
@@ -77,7 +77,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1386,unix/zUbuntu:/tmp/.ICE-unix/1386
+SESSION_MANAGER = local/zUbuntu:@/tmp/.ICE-unix/1478,unix/zUbuntu:/tmp/.ICE-unix/1478
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -109,7 +109,7 @@ PWD = /home/zhuyukuan/my_code/mymuduo/src
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1463
+SSH_AGENT_PID = 1555
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -157,7 +157,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7c1cae40-32e8-4400-95fb-87a8a298661a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b0abd7ad-fd9b-4a0e-9c11-8e908a6c716e.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -195,7 +195,7 @@ GDK_BACKEND = x11
 # environment
 QT_ACCESSIBILITY = 1
 # environment
-DESKTOP_AUTOSTART_ID = 104ce242036870cdd1165400061362566300000013860007
+DESKTOP_AUTOSTART_ID = 1025fd6208c82e9aa3165451639926052200000014780007
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
 # default
@@ -209,11 +209,11 @@ QT4_IM_MODULE = xim
 # makefile (from 'Makefile', line 42)
 CMAKE_COMMAND = /usr/bin/cmake
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/08b1e6c0_1282_4466_b7b0_542aca8d737d
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f3114007_3671_4f9f_9012_c8d5ab8d252d
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.73
+GNOME_TERMINAL_SERVICE = :1.75
 # makefile (from 'Makefile', line 21)
 SUFFIXES = 
 # environment
@@ -229,7 +229,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 3410
+VSCODE_PID = 2074
 # variable set hash-table stats:
 # Load=110/1024=11%, Rehash=0, Collisions=17/144=12%
 
@@ -276,7 +276,6 @@ all: cmake_check_build_system
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'Makefile', line 83):
- 
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles /home/zhuyukuan/my_code/mymuduo/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles 0
@@ -289,6 +288,7 @@ all: cmake_check_build_system
 preinstall/fast:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 105):
@@ -511,6 +511,6 @@ rebuild_cache:
 # strcache performance: lookups = 172 / hit rate = 61%
 # hash-table stats:
 # Load=66/8192=1%, Rehash=0, Collisions=2/172=1%
-# Finished Make data base on Tue May 31 20:56:30 2022
+# Finished Make data base on Mon Jun  6 19:53:41 2022
 
  
