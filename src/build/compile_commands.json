@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Acceptor.o -c /home/zhuyukuan/my_code/mymuduo/src/Acceptor.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Acceptor.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Buffer.o -c /home/zhuyukuan/my_code/mymuduo/src/Buffer.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/Buffer.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/zhuyukuan/my_code/mymuduo/src/Channel.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Channel.cc"
 },
@@ -53,6 +63,11 @@
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Socket.o -c /home/zhuyukuan/my_code/mymuduo/src/Socket.cc",
   "file": "/home/zhuyukuan/my_code/mymuduo/src/Socket.cc"
+},
+{
+  "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpConnection.o -c /home/zhuyukuan/my_code/mymuduo/src/TcpConnection.cc",
+  "file": "/home/zhuyukuan/my_code/mymuduo/src/TcpConnection.cc"
 },
 {
   "directory": "/home/zhuyukuan/my_code/mymuduo/src/build",

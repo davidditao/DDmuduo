@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/zhuyukuan/my_code/mymuduo/src/Acceptor.h
+noncopyable.h
+/home/zhuyukuan/my_code/mymuduo/src/noncopyable.h
+Socket.h
+/home/zhuyukuan/my_code/mymuduo/src/Socket.h
+Channel.h
+/home/zhuyukuan/my_code/mymuduo/src/Channel.h
+
+/home/zhuyukuan/my_code/mymuduo/src/Callbacks.h
+memory
+-
+functional
+-
+
 /home/zhuyukuan/my_code/mymuduo/src/Channel.cc
 Channel.h
 /home/zhuyukuan/my_code/mymuduo/src/Channel.h
@@ -209,6 +223,28 @@ TcpServer.h
 /home/zhuyukuan/my_code/mymuduo/src/TcpServer.h
 
 /home/zhuyukuan/my_code/mymuduo/src/TcpServer.h
+EventLoop.h
+/home/zhuyukuan/my_code/mymuduo/src/EventLoop.h
+Acceptor.h
+/home/zhuyukuan/my_code/mymuduo/src/Acceptor.h
+InetAddress.h
+/home/zhuyukuan/my_code/mymuduo/src/InetAddress.h
+noncopyable.h
+/home/zhuyukuan/my_code/mymuduo/src/noncopyable.h
+EventLoopThreadPool.h
+/home/zhuyukuan/my_code/mymuduo/src/EventLoopThreadPool.h
+Callbacks.h
+/home/zhuyukuan/my_code/mymuduo/src/Callbacks.h
+functional
+-
+string
+-
+memory
+-
+atomic
+-
+unordered_map
+-
 
 /home/zhuyukuan/my_code/mymuduo/src/Thread.cc
 Thread.h

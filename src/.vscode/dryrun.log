@@ -7,14 +7,13 @@ make -f CMakeFiles/Makefile2 all
 make[1]: Entering directory '/home/zhuyukuan/my_code/mymuduo/src'
  
 make[1]: CMakeFiles/Makefile2: No such file or directory
-
 make[1]: *** No rule to make target 'CMakeFiles/Makefile2'.
 make[1]: Failed to remake makefile 'CMakeFiles/Makefile2'.
-
-make[1]: *** No rule to make target 'all'.
-make: *** [all] Error 2
 
 make[1]: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
 Makefile:83: recipe for target 'all' failed
 make: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
  
+make[1]: *** No rule to make target 'all'.
+make: *** [all] Error 2
+

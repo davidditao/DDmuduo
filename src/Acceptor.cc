@@ -7,7 +7,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 
-// 用来初始化accpetSocket
+// 用来初始化accpetSocket, 创建一个sockfd, 作为listenfd
 static int createNonblocking()
 {
     // SOCK_NONBLOCK:非阻塞, SOCK_CLOEXEC:子进程不继承父进程的fd

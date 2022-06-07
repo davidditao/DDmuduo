@@ -157,6 +157,7 @@ void EventLoop::handleRead()
 void EventLoop::wakeup()
 {
     uint64_t one = 1;
+    // 往这个loop中写一个数据就可以唤醒这个loop了
     ssize_t n= write(wakeupFd_, &one, sizeof(one));
     if(n != sizeof(one))
     {

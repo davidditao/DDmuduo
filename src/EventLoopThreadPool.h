@@ -20,7 +20,7 @@ public:
     ~EventLoopThreadPool();
 
     // 设置线程的数量
-    void setThread(int numThreads) { numThreads_ = numThreads; }
+    void setThreadNum(int numThreads) { numThreads_ = numThreads; }
 
     // 开启整个事件循环线程
     void start(const ThreadInitCallback& cb = ThreadInitCallback());

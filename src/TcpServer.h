@@ -28,18 +28,19 @@ public:
 
     TcpServer(EventLoop *loop,
               const InetAddress &listenAddr,
+              const std::string &nameArg,
               Option option = kNoReusePort);
 
     ~TcpServer();
 
     // 设置线程初始化回调
-    void setThreadInitCallback(const ThreadInitCallback &cb){threadInitCallback_ = cb;}
-    // 设置各种回调 
-    void setConnectionCallback(const ConnectionCallback &cb){connectionCallback_ = cb;}
-    void setMessageCallback(const MessageCallback &cb){messageCallback_ = cb;}
-    void setWriteCompleteCallback(const WriteCompleteCallback &cb){writeCompeleteCallback_ = cb;}
+    void setThreadInitCallback(const ThreadInitCallback &cb) { threadInitCallback_ = cb; }
+    // 设置各种回调
+    void setConnectionCallback(const ConnectionCallback &cb) { connectionCallback_ = cb; }
+    void setMessageCallback(const MessageCallback &cb) { messageCallback_ = cb; }
+    void setWriteCompleteCallback(const WriteCompleteCallback &cb) { writeCompeleteCallback_ = cb; }
 
-    // 设置subloop的个数 
+    // 设置subloop的个数
     void setThreadNum(int numThreads);
 
     // 开启服务器监听
@@ -47,11 +48,11 @@ public:
 
 private:
     // TcpConnection相关
-    // 有一条新连接来了
+    // 有一条新用户的连接来了, 需要做的回调
     void newConnection(int sockfd, const InetAddress &peerAddr);
     // 有一条连接断开,将TcpConnection从connections_中移除
     void removeConnection(const TcpConnectionPtr &conn);
-    // 
+    //
     void removeConnectionInLoop(const TcpConnectionPtr &conn);
 
     using ConnectionMap = std::unordered_map<std::string, TcpConnectionPtr>;
