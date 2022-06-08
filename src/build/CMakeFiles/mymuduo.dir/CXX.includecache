@@ -249,6 +249,36 @@ netinet/tcp.h
 /home/zhuyukuan/my_code/mymuduo/src/Socket.h
 
 /home/zhuyukuan/my_code/mymuduo/src/TcpConnection.cc
+TcpConnection.h
+/home/zhuyukuan/my_code/mymuduo/src/TcpConnection.h
+Logger.h
+/home/zhuyukuan/my_code/mymuduo/src/Logger.h
+EventLoop.h
+/home/zhuyukuan/my_code/mymuduo/src/EventLoop.h
+Channel.h
+/home/zhuyukuan/my_code/mymuduo/src/Channel.h
+Socket.h
+/home/zhuyukuan/my_code/mymuduo/src/Socket.h
+functional
+-
+
+/home/zhuyukuan/my_code/mymuduo/src/TcpConnection.h
+noncopyable.h
+/home/zhuyukuan/my_code/mymuduo/src/noncopyable.h
+InetAddress.h
+/home/zhuyukuan/my_code/mymuduo/src/InetAddress.h
+Callbacks.h
+/home/zhuyukuan/my_code/mymuduo/src/Callbacks.h
+Buffer.h
+/home/zhuyukuan/my_code/mymuduo/src/Buffer.h
+Timestamp.h
+/home/zhuyukuan/my_code/mymuduo/src/Timestamp.h
+memory
+-
+string
+-
+atomic
+-
 
 /home/zhuyukuan/my_code/mymuduo/src/TcpServer.cc
 TcpServer.h
