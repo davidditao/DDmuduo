@@ -2,7 +2,7 @@
 #include "Logger.h"
 
 // 用于TcpServer的初始化，用户传入的loop不能为空
-EventLoop *CheckLoopNotNull(EventLoop *loop)
+static EventLoop *CheckLoopNotNull(EventLoop *loop)
 {
     if (loop == nullptr)
     {
