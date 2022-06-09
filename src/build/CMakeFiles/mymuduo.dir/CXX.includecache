@@ -35,6 +35,8 @@ errno.h
 -
 sys/uio.h
 -
+unistd.h
+-
 
 /home/zhuyukuan/my_code/mymuduo/src/Buffer.h
 vector
@@ -259,7 +261,19 @@ Channel.h
 /home/zhuyukuan/my_code/mymuduo/src/Channel.h
 Socket.h
 /home/zhuyukuan/my_code/mymuduo/src/Socket.h
+EventLoop.h
+/home/zhuyukuan/my_code/mymuduo/src/EventLoop.h
 functional
+-
+errno.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+string.h
+-
+netinet/tcp.h
 -
 
 /home/zhuyukuan/my_code/mymuduo/src/TcpConnection.h

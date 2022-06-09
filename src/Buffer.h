@@ -128,6 +128,9 @@ public:
     // 从fd上读取数据
     ssize_t readFd(int fd, int *saveErrno);
 
+    // 往fd上写数据（muduo库中没有用这个函数封装，这里封装一个）
+    ssize_t writeFd(int fd, int *saveErrno);
+
 private:
     // 获取vector的裸指针
     // 首元素的地址

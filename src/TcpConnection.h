@@ -67,6 +67,9 @@ private:
         kDisconnecting
     };
 
+    // 设置连接状态
+    void setState(StateE state) { state_ = state; }
+
     void handleRead(Timestamp receiveTime);
     void handleWrite();
     void handleClose();
