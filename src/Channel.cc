@@ -21,10 +21,10 @@ Channel::Channel(EventLoop *loop, int fd)
 
 Channel::~Channel() {}
 
-//
+// TcpConnection底层管理了一个Channel，如果在执行这个Channel的回调的时候，TcpConnection被销毁了怎么办？
 void Channel::tie(const std::shared_ptr<void> &obj)
 {
-  tie_ = obj; // 用weak_ptr来接收
+  tie_ = obj; // 用weak_ptr来接收TcpConnection的对象
   tied_ = true;
 }
 

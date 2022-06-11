@@ -37,7 +37,7 @@ public:
     bool connected() const { return state_ == kConnected; }
 
     // 发送数据
-    void send(const void *message, int len);
+    void send(const std::string &buf);
 
     // 关闭当前连接
     void shutdown();
@@ -75,7 +75,7 @@ private:
     void handleClose();
     void handleError();
 
-    void sendInLoop(const void *message, size_t len);
+    void sendInLoop(const void *data, size_t len);
     void shutdownInLoop();
 
     EventLoop *loop_;        // 这里绝对不是baseLoop，因为TcpConnection都是在subLoop中管理的
@@ -98,6 +98,6 @@ private:
 
     size_t highWaterMark_; // 水位线
 
-    Buffer inputBuffer_;  // 输入缓冲区
-    Buffer outputBuffer_; // 输出缓冲区
+    Buffer inputBuffer_;  // 接受数据的缓冲区
+    Buffer outputBuffer_; // 发送数据的缓冲区
 };
