@@ -3,17 +3,14 @@ make: Entering directory '/home/zhuyukuan/my_code/mymuduo/src'
 /usr/bin/cmake -H/home/zhuyukuan/my_code/mymuduo -B/home/zhuyukuan/my_code/mymuduo --check-build-system CMakeFiles/Makefile.cmake 0
 /usr/bin/cmake -E cmake_progress_start /home/zhuyukuan/my_code/mymuduo/CMakeFiles /home/zhuyukuan/my_code/mymuduo/CMakeFiles/progress.marks
 make -f CMakeFiles/Makefile2 all
- 
 make[1]: Entering directory '/home/zhuyukuan/my_code/mymuduo/src'
+make[1]: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
+Makefile:83: recipe for target 'all' failed
+make: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
  
 make[1]: CMakeFiles/Makefile2: No such file or directory
 make[1]: *** No rule to make target 'CMakeFiles/Makefile2'.
 make[1]: Failed to remake makefile 'CMakeFiles/Makefile2'.
 make[1]: *** No rule to make target 'all'.
-
-make[1]: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
-Makefile:83: recipe for target 'all' failed
-make: Leaving directory '/home/zhuyukuan/my_code/mymuduo/src'
- 
 make: *** [all] Error 2
 

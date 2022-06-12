@@ -301,6 +301,8 @@ TcpServer.h
 /home/zhuyukuan/my_code/mymuduo/src/TcpServer.h
 Logger.h
 /home/zhuyukuan/my_code/mymuduo/src/Logger.h
+string.h
+-
 
 /home/zhuyukuan/my_code/mymuduo/src/TcpServer.h
 EventLoop.h
@@ -315,6 +317,10 @@ EventLoopThreadPool.h
 /home/zhuyukuan/my_code/mymuduo/src/EventLoopThreadPool.h
 Callbacks.h
 /home/zhuyukuan/my_code/mymuduo/src/Callbacks.h
+TcpConnection.h
+/home/zhuyukuan/my_code/mymuduo/src/TcpConnection.h
+Buffer.h
+/home/zhuyukuan/my_code/mymuduo/src/Buffer.h
 functional
 -
 string

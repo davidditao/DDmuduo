@@ -1,6 +1,5 @@
 #include "TcpServer.h"
 #include "Logger.h"
-#include "TcpConnection.h"
 
 #include <string.h>
 
@@ -25,7 +24,8 @@ TcpServer::TcpServer(EventLoop *loop,
       threadPool_(new EventLoopThreadPool(loop, name_)),
       connectionCallback_(),
       messageCallback_(),
-      nextConnId_(1)
+      nextConnId_(1),
+      started_(0)
 {
     // 如果有新用户连接时，会执行newConnection回调
     acceptor_->setNewConnectionCallback(std::bind(&TcpServer::newConnection, this, std::placeholders::_1, std::placeholders::_2));
@@ -41,7 +41,7 @@ TcpServer::~TcpServer()
         // 使connections_中的智能指针(即item.second)不再指向TcpConnection对象
         item.second.reset();
         // 调用TcpConnection::connectionDestroyed来销毁这个连接
-        conn->getLoop()->runInLoop(std::bind(TcpConnection::connectDestroyed, conn));
+        conn->getLoop()->runInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
     }
     // 出了这个作用域 conn 指针也自动释放，至此，没有任何指针指向TcpConnection对象了
 }

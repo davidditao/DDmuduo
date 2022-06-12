@@ -35,14 +35,18 @@ void Socket::listen()
 int Socket::accept(InetAddress *peeraddr)
 {
     sockaddr_in addr;
-    socklen_t len;
+    socklen_t len = sizeof addr;
     bzero(&addr, sizeof addr);
-    int connfd = ::accept(sockfd_, (sockaddr *)&addr, &len);
+    // int connfd = ::accept(sockfd_, (sockaddr *)&addr, &len);
+    // accept4 可以直接将connfd设置为非阻塞
+    int connfd = ::accept4(sockfd_, (sockaddr *)&addr, &len, SOCK_NONBLOCK);
     if (connfd >= 0)
     {
         // 将对端的地址返回
         peeraddr->setSockAddr(addr);
     }
+
+
 
     return connfd;
 }
