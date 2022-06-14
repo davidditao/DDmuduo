@@ -639,7 +639,7 @@ EchoServer 在用户注册的 *onMessage* 回调中会调用 *TcpConnection::sen
 1. 假如 *outputBuffer_* 为空，则直接向 *connfd* 写数据。
 2. 如果向 *connfd* 写的数据没有写完，则记录剩余的字节数。（没写完可能是因为此时socket的TCP缓冲区已经满了）
 3. 如果此时 *outputBuffer_* 中的旧数据的个数和未写完字节个数和大于 *highWaterMark_* ，则调用 *highWaterMarkCallback_*。否则将剩余数据写入 *outputBuffer_* 缓冲区。
-4. 为 *connfd* 注册可写事件。
+4. 如果向 *connfd* 写的数据没有写完，则最后需要为 *connfd* 注册可写事件。
 
 > 注意：直到发送消息的时候，muduo 才会把 socket 的可写事件注册到了 EventLoop 中。在此之前只注册了可读事件。
 
