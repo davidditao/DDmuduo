@@ -1,4 +1,4 @@
-**自己实现一个muduo库：记录一下学习muduo库以及C++11的过程。**
+**记录一下学习muduo库的过程**
 
 # 一、前置知识：阻塞、非阻塞、同步、异步
 
@@ -665,9 +665,90 @@ EchoServer 在用户注册的 *onMessage* 回调中会调用 *TcpConnection::sen
 3. 将 *connfd* 对应的 `TcpConnection` 对象从 `TcpServer` 中移除。
 4. 关闭 *connfd*。此步骤是在析构函数中自动触发的，当 `TcpConnection` 对象被移除后，引用计数为 0，对象析构时会调用 close。
 
+## 5. Buffer 类的设计
 
+在非阻塞网络编程中为什么需要应用层缓冲区？
 
++ 应用层**发送**缓冲区：假设应用程序需要发送 40 kB 数据，但是操作系统的 TCP 发送缓冲区只有 25 kB 剩余空间，那么剩下的 15 kB 数据怎么办？如果等待 OS 缓冲区可用，会阻塞当前线程，因为不知道对方什么时候收到并读取数据。因此网络库应该把这 15 kB 数据缓存起来，放到这个 TCP 链接的应用层发送缓冲区中，等 socket 变得可写的时候立刻发送数据，这样发送操作才不会阻塞。如果应用层随后又要发送 50 kB 数据，而此时发送缓冲区中尚有未发送的数据，那么网络库应该将 50 kB 数据追加到发送缓冲区的末尾，而不能立刻尝试 write()，因为这样有可能打乱数据顺序。
++  应用层**接收**缓冲区：加入一次读到的数据不够一个完整的数据包，那么这些已经读到的数据应该先暂存在某个地方，等剩余的数据收到之后再一并处理。
 
+### 如何设计并使用缓冲区？
+
+一方面我们希望**减少系统调用**，一次读的数据越多越划算，那么似乎应该准备一个大的缓冲区。
+
+另一方面，我们希望**减少内存占用**。如果有 10 000 个并法连接，每一个连接一建立就分配给 50 kB 的读写缓冲区的话，将占用 1GB 内存，而大多数时候这些缓冲区的使用率很低。
+
+**muduo 用 readv(2) 结合栈上空间巧妙地解决了这个问题。**
+
+具体做法：在栈上准备一个 65 536 字节的 extrabuf，然后利用 readv() 来读取数据，iovec 有两块，第一块指向 muduo Buffer 中的 writable 字节，另一块指向栈上的 extrabuf。这样如果读的数据不多，那么全部都读到 Buffer 中去了；如果长度超过 Buffer 的 writable 字节数，就会读到栈上的 extrabuf 里，然后程序再把 extrabuf 里的数据 append() 到 Buffer 中。
+
+这么做利用了临时栈上空间，避免每个连接初始 Buffer 过大造成的内存浪费，也避免反复调用 read() 的系统开销（由于缓冲区足够大，通常一次 readv() 系统调用就能读完全部数据）。由于 muduo 的事件触发采用**水平触发**（可以保证数据被读完），因此这个函数并不会反复调用 read() 直到其返回 EAGAIN，从而可以降低消息处理的延迟。
+
+```C++
+ssize_t Buffer::readFd(int fd, int* savedErrno)
+{
+  // saved an ioctl()/FIONREAD call to tell how much to read
+  char extrabuf[65536];
+  struct iovec vec[2];
+  const size_t writable = writableBytes();
+  vec[0].iov_base = begin()+writerIndex_;
+  vec[0].iov_len = writable;
+  vec[1].iov_base = extrabuf;
+  vec[1].iov_len = sizeof extrabuf;
+  // when there is enough space in this buffer, don't read into extrabuf.
+  // when extrabuf is used, we read 128k-1 bytes at most.
+  const int iovcnt = (writable < sizeof extrabuf) ? 2 : 1;
+  const ssize_t n = sockets::readv(fd, vec, iovcnt);
+  if (n < 0)
+  {
+    *savedErrno = errno;
+  }
+  else if (implicit_cast<size_t>(n) <= writable)
+  {
+    writerIndex_ += n;
+  }
+  else
+  {
+    writerIndex_ = buffer_.size();
+    append(extrabuf, n - writable);
+  }
+  // if (n == writable + sizeof extrabuf)
+  // {
+  //   goto line_30;
+  // }
+  return n;
+}
+```
+
+### 如果使用发送缓冲区，万一接收放处理缓慢，数据会不会一直堆积在发送方，造成内存暴涨？如果做应用层的流量控制？
+
+非阻塞网络编程中的发送数据比读取数据要困难的多：
+
+一方面什么时候关注“writable事件”问题，这只是带来编码方面的难度。
+
+一方面如果发送数据的速度高于对方接受数据的速度，会造成数据在本地内存中的堆积，这带来设计及安全性方面的难度。
+
+Muduo对此解决办法是提供两个回调，有的网络库把它们称为“**高水位回调**”和“**低水位回调**”，Muduo使HighWaterMarkCallback 和 WriteCompleCallback这两个名字。
+
+高水位回调将停止从用户接收数据。WriteCompleteCallback 函数为发送缓冲区为空时调用，在这个函数重启开启接收数据。
+
+1. WriteCompleCallback
+   如果发送缓存区被清空，就调用它。TcpConnection有两处可能触发此回调。
+
+   TcpConnection::sendInLoop()。
+   TcpConnection::handleWrite()。
+
+2. HighWaterMarkCallback
+   如果输出缓冲的长度超过用户指定大小，就会触发回调（只在上升沿触发一次）。在非阻塞的发送数据情况下，假设 Server 发给 Client 数据流，为防止 Server 发过来的数据撑爆 Client 的输出缓冲区，一种做法是在 Client 的HighWaterMarkCallback 中停止读取 Server 的数据，而在 Client 的 WriteCompleteCallback 中恢复读取 Server 的数据。
+
+### Buffer 设计要点
+
+1. 对外表现为一块连续的内存（char *p, int len），以方便客户代码的编写。
+2. 其 size() 可以自动增长，以适应不同大小的消息。
+3. 内部以 `vector<char>` 来保存数据，并提供相应的访问函数。
+4. 每条连接有两个 Buffer 成员，input buffer 与 output buffer
+   + input buffer：连接从 socket 读取数据，然后写入 input buffer；客户代码从 input buffer 读取数据。
+   + output buffer：客户代码会把数据写入 output buffer，连接从 output buffer 读取数据并写入 socket。
 
 
 
